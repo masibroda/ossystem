@@ -9,7 +9,7 @@ import qa.runners.OssRunner;
 import ua.ossystem.pages.MainPage;
 
 /**
- * @author Anatolii Masibroda <a.masibroda@corp.mail.ru>
+ * @author Anatolii Masibroda <masibrod@mail.ru>
  */
 @Epic("Проверка дубликатов id элементов")
 @RunWith(OssRunner.class)

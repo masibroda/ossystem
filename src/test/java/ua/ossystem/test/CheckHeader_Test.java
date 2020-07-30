@@ -10,7 +10,7 @@ import ua.ossystem.pages.MainPage;
 
 /**
  * Проверка на наличие мета-тегов title, description и keywords
- * @author Anatolii Masibroda <a.masibroda@corp.mail.ru>
+ * @author Anatolii Masibroda <masibrod@mail.ru>
  */
 @Epic("Проверка количества заголовков H1")
 @RunWith(OssRunner.class)

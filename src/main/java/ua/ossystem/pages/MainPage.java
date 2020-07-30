@@ -11,7 +11,7 @@ import qa.utils.PageUrl;
 
 /**
  * Главная страница
- * @author Anatolii Masibroda <a.masibroda@corp.mail.ru>
+ * @author Anatolii Masibroda <masibrod@mail.ru>
  */
 @PageUrl("/")
 @DefaultUrl("/")

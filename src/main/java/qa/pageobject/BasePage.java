@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 
 /**
  * Базовая страница
- * @author Anatolii Masibroda <a.masibroda@corp.mail.ru>
+ * @author Anatolii Masibroda <masibrod@mail.ru>
  */
 public abstract class BasePage<T> extends NavigationObject<T> {
 
