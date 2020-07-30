@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Проблема с валидацией компонента на странице",
+    "messageRegex": ".*Компонент .* отсутствует на странице.*",
+    "matchedStatuses": [
+      "failed"
+    ]
+  },
+  {
+    "name": "Падение на ассерте",
+    "messageRegex": ".*(должен|должна|должно|не изменилось|не меньше|не содержит|отсутствует|должны|Неверный|неверные|должны).*",
+    "matchedStatuses": [
+      "failed"
+    ]
+  },
+  {
+    "name": "Неверный заголовок на странице",
+    "messageRegex": ".*(отображается неверный заголовок|Не правильный заголовок).*",
+    "matchedStatuses": [
+      "failed"
+    ]
+  },
+  {
+    "name": "Страница вернула код 404",
+    "messageRegex": ".*Страница вернула http код ответа 404.*",
+    "matchedStatuses": [
+      "failed"
+    ]
+  },
+  {
+    "name": "Внутрення ошибка сервера (код ответа 500)",
+    "messageRegex": ".*Страница вернула http код ответа 500.*",
+    "matchedStatuses": [
+      "failed"
+    ]
+  },
+  {
+    "name": "Страница вернула код 403",
+    "messageRegex": ".*Страница вернула http код ответа 403.*",
+    "matchedStatuses": [
+      "failed"
+    ]
+  },
+  {
+    "name": "Страница вернула код 401",
+    "messageRegex": ".*Страница вернула http код ответа 401.*",
+    "matchedStatuses": [
+      "failed"
+    ]
+  },
+  {
+    "name": "Страница вернула код 504",
+    "messageRegex": ".*Страница вернула http код ответа 504.*",
+    "matchedStatuses": [
+      "failed"
+    ]
+  },
+  {
+    "name": "Проблемы с локаторами",
+    "messageRegex": "(.*Unable to locate element.*|Index: 0, Size: 0|No value present)",
+    "matchedStatuses": [
+      "broken"
+    ]
+  },
+  {
+    "name": "Падение по таймауту",
+    "traceRegex": ".*TimeoutException.*",
+    "matchedStatuses": [
+      "broken"
+    ]
+  },
+  {
+    "name": "Элемент отсутствует в DOM'е",
+    "messageRegex": ".*element is not attached to the page document.*",
+    "matchedStatuses": [
+      "broken"
+    ]
+  },
+  {
+    "name": "Элемент не кликабелен",
+    "messageRegex": ".*Element .* is not clickable.*",
+    "matchedStatuses": [
+      "broken"
+    ]
+  },
+  {
+    "name": "Проблема с методом на стороне автотеста",
+    "traceRegex": ".*(StringIndexOutOfBoundsException|NullPointerException).*",
+    "matchedStatuses": [
+      "broken"
+    ]
+  },
+  {
+    "name": "Проблема с сертификатом SSL",
+    "traceRegex": ".*ValidatorException.*",
+    "matchedStatuses": [
+      "broken"
+    ]
+  },
+  {
+    "name": "Элемент не отображается",
+    "traceRegex": ".*ElementNotVisibleException.*",
+    "matchedStatuses": [
+      "broken"
+    ]
+  }
+]
