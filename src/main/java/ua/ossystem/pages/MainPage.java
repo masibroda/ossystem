@@ -1,4 +1,4 @@
-package ua.ossystem;
+package ua.ossystem.pages;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

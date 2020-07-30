@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import qa.driver.Driver;
 import qa.runners.OssRunner;
-import ua.ossystem.MainPage;
+import ua.ossystem.pages.MainPage;
 
 /**
  * @author Anatolii Masibroda <a.masibroda@corp.mail.ru>
