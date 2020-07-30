@@ -24,6 +24,7 @@ public class CheckTagScript_Test {
     //Открваем страницу
     new MainPage(driver)
         .open()
+        //Проверяем script
         .tagScriptShouldBeContainsSrc();
   }
 }

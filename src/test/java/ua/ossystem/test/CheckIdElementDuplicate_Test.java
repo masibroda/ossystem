@@ -24,6 +24,7 @@ public class CheckIdElementDuplicate_Test {
     //Открваем страницу
     new MainPage(driver)
         .open()
+        //Проверяем дубликаты
         .idElementShouldBeNotDuplicate();
   }
 }

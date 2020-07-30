@@ -24,6 +24,7 @@ public class CheckJsCssFile_Test {
     //Открваем страницу
     new MainPage(driver)
         .open()
+        //Проверяем файлы
         .fileShouldBePresent();
   }
 }

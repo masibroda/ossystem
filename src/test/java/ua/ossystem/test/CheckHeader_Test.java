@@ -25,6 +25,7 @@ public class CheckHeader_Test {
     //Открваем страницу
     new MainPage(driver)
         .open()
+        //Проверяем заголовки
         .sizeHeaderShouldBeNotMoreThan(1);
   }
 }

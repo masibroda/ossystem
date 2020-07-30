@@ -24,6 +24,7 @@ public class CheckMetaTag_Test {
     //Открваем страницу
     new MainPage(driver)
         .open()
+        //Проверяем метатеги
         .metaTagShouldBePresent();
   }
 }
