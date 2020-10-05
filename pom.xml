@@ -17,7 +17,6 @@
         <!--Dependencies version-->
         <junit.version>4.13</junit.version>
         <selenium.java.version>3.141.59</selenium.java.version>
-        <restassured.version>2.9.0</restassured.version>
         <alure.version>2.13.0</alure.version>
         <assertj.version>3.13.2</assertj.version>
 
@@ -55,12 +54,6 @@
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>${selenium.java.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.jayway.restassured</groupId>
-            <artifactId>rest-assured</artifactId>
-            <version>${restassured.version}</version>
-            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.assertj</groupId>
