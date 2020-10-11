@@ -15,6 +15,7 @@ public class ChromeSettings {
     chromeOptions.addArguments("start-maximized");
     chromeOptions.addArguments("--no-first-run");
     chromeOptions.addArguments("--homepage=about:blank");
+    chromeOptions.setExperimentalOption("w3c", false);
 
     chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 
