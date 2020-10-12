@@ -2,7 +2,11 @@ package qa.driver.settings;
 
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.logging.LogType;
+import org.openqa.selenium.logging.LoggingPreferences;
 import org.openqa.selenium.remote.CapabilityType;
+
+import java.util.logging.Level;
 
 /**
  * Настройки GoogleChrome WebDriver
@@ -12,12 +16,16 @@ public class ChromeSettings {
 
   public ChromeOptions getChromeOptions() {
     ChromeOptions chromeOptions = new ChromeOptions();
+    chromeOptions.addArguments("--no-sandbox");
     chromeOptions.addArguments("start-maximized");
     chromeOptions.addArguments("--no-first-run");
     chromeOptions.addArguments("--homepage=about:blank");
     chromeOptions.setExperimentalOption("w3c", false);
 
-    chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+    LoggingPreferences logPrefs = new LoggingPreferences();
+    logPrefs.enable(LogType.PERFORMANCE, Level.INFO);
+
+    chromeOptions.setCapability(CapabilityType.LOGGING_PREFS, logPrefs);
 
     chromeOptions.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
     chromeOptions.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
