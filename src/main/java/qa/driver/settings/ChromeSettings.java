@@ -21,6 +21,7 @@ public class ChromeSettings {
     chromeOptions.addArguments("--no-first-run");
     chromeOptions.addArguments("--homepage=about:blank");
     chromeOptions.setExperimentalOption("w3c", false);
+    chromeOptions.addArguments("--headless");
     System.setProperty("webdriver.chrome.silentOutput", "true");
 
     LoggingPreferences logPrefs = new LoggingPreferences();
