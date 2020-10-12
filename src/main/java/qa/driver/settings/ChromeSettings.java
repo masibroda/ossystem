@@ -21,7 +21,7 @@ public class ChromeSettings {
     chromeOptions.addArguments("--no-first-run");
     chromeOptions.addArguments("--homepage=about:blank");
     chromeOptions.setExperimentalOption("w3c", false);
-    chromeOptions.setExperimentalOption("OSS", false);
+    chromeOptions.setExperimentalOption("OSS", true);
 
     LoggingPreferences logPrefs = new LoggingPreferences();
     logPrefs.enable(LogType.PERFORMANCE, Level.INFO);
