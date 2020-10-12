@@ -16,12 +16,9 @@ public class ChromeSettings {
 
   public ChromeOptions getChromeOptions() {
     ChromeOptions chromeOptions = new ChromeOptions();
-    chromeOptions.addArguments("--no-sandbox");
     chromeOptions.addArguments("start-maximized");
     chromeOptions.addArguments("--no-first-run");
     chromeOptions.addArguments("--homepage=about:blank");
-    chromeOptions.setExperimentalOption("w3c", false);
-    chromeOptions.addArguments("--headless");
     System.setProperty("webdriver.chrome.silentOutput", "true");
 
     LoggingPreferences logPrefs = new LoggingPreferences();
