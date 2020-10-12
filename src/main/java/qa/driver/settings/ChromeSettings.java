@@ -7,7 +7,6 @@ import org.openqa.selenium.logging.LoggingPreferences;
 import org.openqa.selenium.remote.CapabilityType;
 
 import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  * Настройки GoogleChrome WebDriver
@@ -16,8 +15,6 @@ import java.util.logging.Logger;
 public class ChromeSettings {
 
   public ChromeOptions getChromeOptions() {
-    Logger.getLogger("org.openqa.selenium.remote").setLevel(Level.OFF);
-    System.setProperty("webdriver.chrome.silentOutput", "true");
     ChromeOptions chromeOptions = new ChromeOptions();
     chromeOptions.addArguments("--no-sandbox");
     chromeOptions.addArguments("start-maximized");
@@ -25,6 +22,7 @@ public class ChromeSettings {
     chromeOptions.addArguments("--homepage=about:blank");
     chromeOptions.setExperimentalOption("w3c", false);
     chromeOptions.addArguments("--headless");
+    System.setProperty("webdriver.chrome.silentOutput", "true");
 
     LoggingPreferences logPrefs = new LoggingPreferences();
     logPrefs.enable(LogType.PERFORMANCE, Level.INFO);
