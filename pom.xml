@@ -15,7 +15,7 @@
         <maven.compiler.plugin.version>3.7.0</maven.compiler.plugin.version>
 
         <!--Dependencies version-->
-        <junit.version>4.13</junit.version>
+        <junit.version>4.13.1</junit.version>
         <selenium.java.version>3.141.59</selenium.java.version>
         <restassured.version>2.9.0</restassured.version>
         <alure.version>2.13.6</alure.version>
@@ -69,7 +69,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.13</version>
+            <version>4.13.1</version>
         </dependency>
         <dependency>
             <groupId>io.qameta.allure</groupId>
